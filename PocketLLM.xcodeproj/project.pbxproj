@@ -1,0 +1,734 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA07F13D2E0279C900138462 /* AudioRecorderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA07F13C2E0279C900138462 /* AudioRecorderService.swift */; };
+		BA0A74062E02ED70006EA034 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0A74052E02ED70006EA034 /* CoreDataManager.swift */; };
+		BA0A74082E02EFC2006EA034 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0A74072E02EFC2006EA034 /* PaddingLabel.swift */; };
+		BA0EF7222DFF270000BAC77C /* BlinkEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0EF7212DFF270000BAC77C /* BlinkEffect.swift */; };
+		BA0EF7252E00415D00BAC77C /* Phi-3-mini-4k-instruct-q4.gguf in Resources */ = {isa = PBXBuildFile; fileRef = BA0EF7242E00415D00BAC77C /* Phi-3-mini-4k-instruct-q4.gguf */; };
+		BA45F9552DFDBC44002F443C /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA45F9542DFDBC44002F443C /* MessageViewController.swift */; };
+		BA74AFC02DFC66160015DE30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA74AFBF2DFC66160015DE30 /* AppDelegate.swift */; };
+		BA74AFC22DFC66160015DE30 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA74AFC12DFC66160015DE30 /* SceneDelegate.swift */; };
+		BA74AFC72DFC66160015DE30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA74AFC52DFC66160015DE30 /* Main.storyboard */; };
+		BA74AFCA2DFC66160015DE30 /* PocketLLM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA74AFC82DFC66160015DE30 /* PocketLLM.xcdatamodeld */; };
+		BA74AFCC2DFC661E0015DE30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA74AFCB2DFC661E0015DE30 /* Assets.xcassets */; };
+		BA74AFCF2DFC661E0015DE30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA74AFCD2DFC661E0015DE30 /* LaunchScreen.storyboard */; };
+		BA74AFDA2DFC661F0015DE30 /* PocketLLMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA74AFD92DFC661F0015DE30 /* PocketLLMTests.swift */; };
+		BA74AFE42DFC661F0015DE30 /* PocketLLMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA74AFE32DFC661F0015DE30 /* PocketLLMUITests.swift */; };
+		BA74AFE62DFC661F0015DE30 /* PocketLLMUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA74AFE52DFC661F0015DE30 /* PocketLLMUITestsLaunchTests.swift */; };
+		BAE5CAE72DFDCC5200CE9F93 /* HistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE5CAE62DFDCC5200CE9F93 /* HistoryController.swift */; };
+		BAF5EC082E02A8D20086870D /* STTService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF5EC072E02A8D20086870D /* STTService.swift */; };
+		BAF5EC0A2E02BC620086870D /* Secret.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAF5EC092E02BC620086870D /* Secret.plist */; };
+		BAF5EC192E02CF8C0086870D /* LLMService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF5EC182E02CF8C0086870D /* LLMService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BA74AFD62DFC661E0015DE30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA74AFB42DFC66160015DE30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA74AFBB2DFC66160015DE30;
+			remoteInfo = PocketLLM;
+		};
+		BA74AFE02DFC661F0015DE30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA74AFB42DFC66160015DE30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA74AFBB2DFC66160015DE30;
+			remoteInfo = PocketLLM;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BA9E67892E02DF58007AD418 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BA07F13C2E0279C900138462 /* AudioRecorderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AudioRecorderService.swift; path = PocketLLM/Controller/AudioRecorderService.swift; sourceTree = SOURCE_ROOT; };
+		BA0A74052E02ED70006EA034 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CoreDataManager.swift; path = PocketLLM/CoreDataManager.swift; sourceTree = SOURCE_ROOT; };
+		BA0A74072E02EFC2006EA034 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
+		BA0EF7212DFF270000BAC77C /* BlinkEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlinkEffect.swift; sourceTree = "<group>"; };
+		BA0EF7242E00415D00BAC77C /* Phi-3-mini-4k-instruct-q4.gguf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Phi-3-mini-4k-instruct-q4.gguf"; sourceTree = "<group>"; };
+		BA45F9542DFDBC44002F443C /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MessageViewController.swift; path = PocketLLM/Controller/MessageViewController.swift; sourceTree = SOURCE_ROOT; };
+		BA74AFBC2DFC66160015DE30 /* PocketLLM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketLLM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA74AFBF2DFC66160015DE30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BA74AFC12DFC66160015DE30 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BA74AFC62DFC66160015DE30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BA74AFC92DFC66160015DE30 /* PocketLLM.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PocketLLM.xcdatamodel; sourceTree = "<group>"; };
+		BA74AFCB2DFC661E0015DE30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA74AFCE2DFC661E0015DE30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BA74AFD02DFC661E0015DE30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA74AFD52DFC661E0015DE30 /* PocketLLMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PocketLLMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA74AFD92DFC661F0015DE30 /* PocketLLMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketLLMTests.swift; sourceTree = "<group>"; };
+		BA74AFDF2DFC661F0015DE30 /* PocketLLMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PocketLLMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA74AFE32DFC661F0015DE30 /* PocketLLMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketLLMUITests.swift; sourceTree = "<group>"; };
+		BA74AFE52DFC661F0015DE30 /* PocketLLMUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketLLMUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BAE5CAE62DFDCC5200CE9F93 /* HistoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryController.swift; sourceTree = "<group>"; };
+		BAF5EC072E02A8D20086870D /* STTService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = STTService.swift; path = PocketLLM/whisper.cpp/STTService.swift; sourceTree = SOURCE_ROOT; };
+		BAF5EC092E02BC620086870D /* Secret.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Secret.plist; sourceTree = "<group>"; };
+		BAF5EC182E02CF8C0086870D /* LLMService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LLMService.swift; path = PocketLLM/LLMService.swift; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA74AFB92DFC66160015DE30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA74AFD22DFC661E0015DE30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA74AFDC2DFC661F0015DE30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BA0EF7202DFF26E800BAC77C /* Effect */ = {
+			isa = PBXGroup;
+			children = (
+				BA0EF7212DFF270000BAC77C /* BlinkEffect.swift */,
+				BA0A74072E02EFC2006EA034 /* PaddingLabel.swift */,
+			);
+			path = Effect;
+			sourceTree = "<group>";
+		};
+		BA0EF7232E00413200BAC77C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BA0EF7242E00415D00BAC77C /* Phi-3-mini-4k-instruct-q4.gguf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BA0EF7492E00575700BAC77C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BA45F9542DFDBC44002F443C /* MessageViewController.swift */,
+				BAE5CAE62DFDCC5200CE9F93 /* HistoryController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BA74AFB32DFC66160015DE30 = {
+			isa = PBXGroup;
+			children = (
+				BA74AFBE2DFC66160015DE30 /* PocketLLM */,
+				BA74AFD82DFC661F0015DE30 /* PocketLLMTests */,
+				BA74AFE22DFC661F0015DE30 /* PocketLLMUITests */,
+				BA74AFBD2DFC66160015DE30 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BA74AFBD2DFC66160015DE30 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA74AFBC2DFC66160015DE30 /* PocketLLM.app */,
+				BA74AFD52DFC661E0015DE30 /* PocketLLMTests.xctest */,
+				BA74AFDF2DFC661F0015DE30 /* PocketLLMUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA74AFBE2DFC66160015DE30 /* PocketLLM */ = {
+			isa = PBXGroup;
+			children = (
+				BAF5EBF72E029BE50086870D /* LLMCore */,
+				BA0EF7492E00575700BAC77C /* Controller */,
+				BA0EF7232E00413200BAC77C /* Resources */,
+				BA0EF7202DFF26E800BAC77C /* Effect */,
+				BA74AFF52DFD80900015DE30 /* Services */,
+				BA74AFF42DFD7FB30015DE30 /* StoryBoard */,
+				BA74AFF32DFD7F9D0015DE30 /* Models */,
+				BA74AFCB2DFC661E0015DE30 /* Assets.xcassets */,
+				BA74AFCD2DFC661E0015DE30 /* LaunchScreen.storyboard */,
+				BA74AFD02DFC661E0015DE30 /* Info.plist */,
+				BAF5EC092E02BC620086870D /* Secret.plist */,
+				BA74AFC82DFC66160015DE30 /* PocketLLM.xcdatamodeld */,
+			);
+			path = PocketLLM;
+			sourceTree = "<group>";
+		};
+		BA74AFD82DFC661F0015DE30 /* PocketLLMTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA74AFD92DFC661F0015DE30 /* PocketLLMTests.swift */,
+			);
+			path = PocketLLMTests;
+			sourceTree = "<group>";
+		};
+		BA74AFE22DFC661F0015DE30 /* PocketLLMUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BA74AFE32DFC661F0015DE30 /* PocketLLMUITests.swift */,
+				BA74AFE52DFC661F0015DE30 /* PocketLLMUITestsLaunchTests.swift */,
+			);
+			path = PocketLLMUITests;
+			sourceTree = "<group>";
+		};
+		BA74AFF32DFD7F9D0015DE30 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BA0A74052E02ED70006EA034 /* CoreDataManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BA74AFF42DFD7FB30015DE30 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				BA74AFC12DFC66160015DE30 /* SceneDelegate.swift */,
+				BA74AFBF2DFC66160015DE30 /* AppDelegate.swift */,
+				BA74AFC52DFC66160015DE30 /* Main.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		BA74AFF52DFD80900015DE30 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BA07F13C2E0279C900138462 /* AudioRecorderService.swift */,
+				BAF5EC072E02A8D20086870D /* STTService.swift */,
+				BAF5EC182E02CF8C0086870D /* LLMService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BAF5EBF72E029BE50086870D /* LLMCore */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LLMCore;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA74AFBB2DFC66160015DE30 /* PocketLLM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA74AFE92DFC661F0015DE30 /* Build configuration list for PBXNativeTarget "PocketLLM" */;
+			buildPhases = (
+				BA74AFB82DFC66160015DE30 /* Sources */,
+				BA74AFB92DFC66160015DE30 /* Frameworks */,
+				BA74AFBA2DFC66160015DE30 /* Resources */,
+				BA9E67892E02DF58007AD418 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PocketLLM;
+			productName = PocketLLM;
+			productReference = BA74AFBC2DFC66160015DE30 /* PocketLLM.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BA74AFD42DFC661E0015DE30 /* PocketLLMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA74AFEC2DFC661F0015DE30 /* Build configuration list for PBXNativeTarget "PocketLLMTests" */;
+			buildPhases = (
+				BA74AFD12DFC661E0015DE30 /* Sources */,
+				BA74AFD22DFC661E0015DE30 /* Frameworks */,
+				BA74AFD32DFC661E0015DE30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA74AFD72DFC661E0015DE30 /* PBXTargetDependency */,
+			);
+			name = PocketLLMTests;
+			productName = PocketLLMTests;
+			productReference = BA74AFD52DFC661E0015DE30 /* PocketLLMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BA74AFDE2DFC661F0015DE30 /* PocketLLMUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA74AFEF2DFC661F0015DE30 /* Build configuration list for PBXNativeTarget "PocketLLMUITests" */;
+			buildPhases = (
+				BA74AFDB2DFC661F0015DE30 /* Sources */,
+				BA74AFDC2DFC661F0015DE30 /* Frameworks */,
+				BA74AFDD2DFC661F0015DE30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA74AFE12DFC661F0015DE30 /* PBXTargetDependency */,
+			);
+			name = PocketLLMUITests;
+			productName = PocketLLMUITests;
+			productReference = BA74AFDF2DFC661F0015DE30 /* PocketLLMUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA74AFB42DFC66160015DE30 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					BA74AFBB2DFC66160015DE30 = {
+						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1420;
+					};
+					BA74AFD42DFC661E0015DE30 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = BA74AFBB2DFC66160015DE30;
+					};
+					BA74AFDE2DFC661F0015DE30 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = BA74AFBB2DFC66160015DE30;
+					};
+				};
+			};
+			buildConfigurationList = BA74AFB72DFC66160015DE30 /* Build configuration list for PBXProject "PocketLLM" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BA74AFB32DFC66160015DE30;
+			productRefGroup = BA74AFBD2DFC66160015DE30 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA74AFBB2DFC66160015DE30 /* PocketLLM */,
+				BA74AFD42DFC661E0015DE30 /* PocketLLMTests */,
+				BA74AFDE2DFC661F0015DE30 /* PocketLLMUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA74AFBA2DFC66160015DE30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAF5EC0A2E02BC620086870D /* Secret.plist in Resources */,
+				BA74AFCF2DFC661E0015DE30 /* LaunchScreen.storyboard in Resources */,
+				BA74AFCC2DFC661E0015DE30 /* Assets.xcassets in Resources */,
+				BA74AFC72DFC66160015DE30 /* Main.storyboard in Resources */,
+				BA0EF7252E00415D00BAC77C /* Phi-3-mini-4k-instruct-q4.gguf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA74AFD32DFC661E0015DE30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA74AFDD2DFC661F0015DE30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA74AFB82DFC66160015DE30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAE5CAE72DFDCC5200CE9F93 /* HistoryController.swift in Sources */,
+				BAF5EC082E02A8D20086870D /* STTService.swift in Sources */,
+				BA74AFCA2DFC66160015DE30 /* PocketLLM.xcdatamodeld in Sources */,
+				BA07F13D2E0279C900138462 /* AudioRecorderService.swift in Sources */,
+				BA74AFC02DFC66160015DE30 /* AppDelegate.swift in Sources */,
+				BAF5EC192E02CF8C0086870D /* LLMService.swift in Sources */,
+				BA74AFC22DFC66160015DE30 /* SceneDelegate.swift in Sources */,
+				BA45F9552DFDBC44002F443C /* MessageViewController.swift in Sources */,
+				BA0A74062E02ED70006EA034 /* CoreDataManager.swift in Sources */,
+				BA0EF7222DFF270000BAC77C /* BlinkEffect.swift in Sources */,
+				BA0A74082E02EFC2006EA034 /* PaddingLabel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA74AFD12DFC661E0015DE30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA74AFDA2DFC661F0015DE30 /* PocketLLMTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA74AFDB2DFC661F0015DE30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA74AFE62DFC661F0015DE30 /* PocketLLMUITestsLaunchTests.swift in Sources */,
+				BA74AFE42DFC661F0015DE30 /* PocketLLMUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BA74AFD72DFC661E0015DE30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA74AFBB2DFC66160015DE30 /* PocketLLM */;
+			targetProxy = BA74AFD62DFC661E0015DE30 /* PBXContainerItemProxy */;
+		};
+		BA74AFE12DFC661F0015DE30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA74AFBB2DFC66160015DE30 /* PocketLLM */;
+			targetProxy = BA74AFE02DFC661F0015DE30 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BA74AFC52DFC66160015DE30 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA74AFC62DFC66160015DE30 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BA74AFCD2DFC661E0015DE30 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA74AFCE2DFC661E0015DE30 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BA74AFE72DFC661F0015DE30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BA74AFE82DFC661F0015DE30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BA74AFEA2DFC661F0015DE30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = PocketLLM/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-071187.hansung.ac.kr.PocketLLM";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BA74AFEB2DFC661F0015DE30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = PocketLLM/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-071187.hansung.ac.kr.PocketLLM";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BA74AFED2DFC661F0015DE30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-071187.hansung.ac.kr.PocketLLMTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PocketLLM.app/PocketLLM";
+			};
+			name = Debug;
+		};
+		BA74AFEE2DFC661F0015DE30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-071187.hansung.ac.kr.PocketLLMTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PocketLLM.app/PocketLLM";
+			};
+			name = Release;
+		};
+		BA74AFF02DFC661F0015DE30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-071187.hansung.ac.kr.PocketLLMUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PocketLLM;
+			};
+			name = Debug;
+		};
+		BA74AFF12DFC661F0015DE30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-071187.hansung.ac.kr.PocketLLMUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PocketLLM;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA74AFB72DFC66160015DE30 /* Build configuration list for PBXProject "PocketLLM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA74AFE72DFC661F0015DE30 /* Debug */,
+				BA74AFE82DFC661F0015DE30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA74AFE92DFC661F0015DE30 /* Build configuration list for PBXNativeTarget "PocketLLM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA74AFEA2DFC661F0015DE30 /* Debug */,
+				BA74AFEB2DFC661F0015DE30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA74AFEC2DFC661F0015DE30 /* Build configuration list for PBXNativeTarget "PocketLLMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA74AFED2DFC661F0015DE30 /* Debug */,
+				BA74AFEE2DFC661F0015DE30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA74AFEF2DFC661F0015DE30 /* Build configuration list for PBXNativeTarget "PocketLLMUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA74AFF02DFC661F0015DE30 /* Debug */,
+				BA74AFF12DFC661F0015DE30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BA74AFC82DFC66160015DE30 /* PocketLLM.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BA74AFC92DFC66160015DE30 /* PocketLLM.xcdatamodel */,
+			);
+			currentVersion = BA74AFC92DFC66160015DE30 /* PocketLLM.xcdatamodel */;
+			path = PocketLLM.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BA74AFB42DFC66160015DE30 /* Project object */;
+}
